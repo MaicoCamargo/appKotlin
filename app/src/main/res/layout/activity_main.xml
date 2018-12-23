@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/valorTemp"
-        android:hint="Digite a temperatura"
+        android:hint="@string/label_temperatura"
         android:inputType="numberDecimal"/>
 
     <RadioGroup
@@ -22,15 +22,15 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Celsius"
+            android:text="@string/radio_button_celsius"
             android:id="@+id/celsiusRadio"
             android:checked="false"/>
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Fahreinheit"
-            android:id="@+id/Fahreinheit"
+            android:text="@string/radio_button_fahreinheit"
+            android:id="@+id/FahreinheitRadio"
             android:checked="true"/>
 
     </RadioGroup>
@@ -39,7 +39,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/conveterButton"
-        android:text="Converter temperatura"/>
+        android:text="@string/button_converter"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white"/>
 
 </LinearLayout>
 
